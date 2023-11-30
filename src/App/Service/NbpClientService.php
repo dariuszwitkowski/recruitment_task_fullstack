@@ -52,10 +52,12 @@ class NbpClientService implements ExchangeRatesClientInterface
             $url = $this->nbpApiUrl . sprintf($this->nbpExchangeRatesRoute, $date);
             return $this->cache->get(md5($url), function (ItemInterface $item) use ($url) {
                 $item->expiresAt((new \DateTime())->modify('+1 day'));
+
                 return $this->client->request(Request::METHOD_GET, $url)->toArray()[0]['rates'];
             });
         } catch (Exception | InvalidArgumentException $e) {
             $this->logger->error($e->getMessage());
+
             return [];
         }
     }

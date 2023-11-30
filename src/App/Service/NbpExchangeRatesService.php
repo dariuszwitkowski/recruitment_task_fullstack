@@ -30,8 +30,8 @@ class NbpExchangeRatesService implements ExchangeRatesInterface
                 $this->filterCurrencies($exchangeRates)
             );
         }
-
         $response['currencies'] = $this->getAvailableCurrencies();
+
         return $response;
     }
 
