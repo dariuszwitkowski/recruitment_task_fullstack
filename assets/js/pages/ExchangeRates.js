@@ -57,7 +57,10 @@ class ExchangeRates extends React.Component {
   }
 
   parseData(
-      availableCurrencies, currenciesToday = [], currenciesSelectedDate = []) {
+      availableCurrencies,
+      currenciesToday = [],
+      currenciesSelectedDate = []
+  ) {
     const noData = 'N/A';
     return Object.keys(availableCurrencies).map(currency => {
       const currencyToday = currenciesToday.find(c => c.code === currency) ||
@@ -86,15 +89,18 @@ class ExchangeRates extends React.Component {
   }
 
   render() {
-    const {loading, currencies, selectedDate, warning} = this.state;
+    const {loading, currencies, selectedDate} = this.state;
 
     return (
         <div>
-          <DatePicker disabled={loading} selectedDate={selectedDate}
-                      onDateChange={this.handleDateChange}/>
-          {loading ? (<Spinner/>) : (<ExchangeRatesTable currencies={currencies}
-                                                         selectedDate={selectedDate}/>)}
-          <p>{warning}</p>
+          <DatePicker
+              disabled={loading}
+              selectedDate={selectedDate}
+              onDateChange={this.handleDateChange}
+          />
+          {loading ? (<Spinner/>) : (
+              <ExchangeRatesTable currencies={currencies} selectedDate={selectedDate}/>
+          )}
         </div>
     );
   }
