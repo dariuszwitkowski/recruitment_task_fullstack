@@ -1,0 +1,18 @@
+currency_config:
+  EUR:
+    name: Euro
+    buy_diff: -0.05
+    sell_diff: 0.07
+  USD:
+    name: Dolar amerykański
+    buy_diff: -0.05
+    sell_diff: 0.07
+  CZK:
+    name: Korona czeska
+    sell_diff: 0.15
+  IDR:
+    name: Rupia indonezyjska
+    sell_diff: 0.15
+  BRL:
+    name: Real Brazylijski
+    sell_diff: 0.15
