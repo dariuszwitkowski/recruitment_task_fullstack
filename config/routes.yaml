@@ -1,12 +1,9 @@
-#home:
-#  path: /
-#  defaults: { _controller: 'AppBundle\Controller\DefaultController::indexAction' }
-#  methods:  GET
-#
-
 setupcheck:
     path: /api/setup-check
     controller: App\Controller\DefaultController::setupCheck
+getExchangeRates:
+    path: /api/exchange-rates
+    controller: App\Controller\ExchangeRatesController::getExchangeRates
 
 index:
     path: /{wildcard}

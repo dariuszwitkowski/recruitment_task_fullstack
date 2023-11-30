@@ -1,0 +1,42 @@
+.currency-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.currency-table thead {
+    background-color: #f4f4f4;
+}
+
+.currency-table th,
+.currency-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.currency-table th {
+    color: #333;
+    font-weight: bold;
+}
+
+.currency-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.currency-table input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.date-picker {
+    height: 60px;
+    border: none;
+    margin-right: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.date-picker-label, .date-picker {
+    font-size: 28px;
+}
