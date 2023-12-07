@@ -1,0 +1,15 @@
+.currency-converter {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+    padding-right: 10px;
+    background-color: #7f7f7f;
+}
+.currency-converter-item {
+    margin-left: 10px
+}
+.result {
+    padding: 10px;
+    text-decoration: underline;
+}

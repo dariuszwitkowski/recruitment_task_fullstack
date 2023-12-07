@@ -40,3 +40,7 @@
 .date-picker-label, .date-picker {
     font-size: 28px;
 }
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+}
